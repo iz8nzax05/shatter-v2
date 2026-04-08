@@ -68,4 +68,6 @@ pip install pygame
 python shatter_v2.py
 ```
 
-**719 lines**, single file.
+`shatter.py` is the v1 prototype (360 lines) — simpler crack generation, no UI panel, no orb collisions. Kept for reference.
+
+**719 lines** (v2) + **360 lines** (v1).
