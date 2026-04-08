@@ -24,7 +24,7 @@ Dents stack — multiple hits at the same spot compound. The floor line is redra
 | 30–50 | Deep dent + heavy cracks |
 | > 50 | Crater + max cracks |
 
-**Crack generation** — cracks are procedurally grown as wobbly segmented lines. Each segment deflects the angle by a random amount (`±0.3 rad`). At depth 0, each crack has a 40% chance to branch at the midpoint, spawning 1–2 child cracks at ±1.2 rad. Max branch depth is 2. The cracks are drawn once onto a persistent `pygame.Surface` and stay there.
+**Crack generation** — cracks are procedurally grown as wobbly segmented lines. Each segment deflects the angle by a random amount (`±0.3 rad`). Any crack below max depth has a 40% chance to branch at the midpoint, spawning 1–2 child cracks at ±1.2 rad. Max branch depth is 2, so branches can branch once more. The cracks are drawn once onto a persistent `pygame.Surface` and stay there.
 
 **Slope physics** — the orb samples floor height 5px left and right to estimate slope angle, then gets a lateral acceleration pushing it downhill:
 ```python
